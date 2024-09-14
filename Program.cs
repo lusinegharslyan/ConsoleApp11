@@ -32,18 +32,18 @@ namespace ConsoleApp11
     }
 
 
-    class Dog:Animal
+    class Dog : Animal
     {
-        public Dog(string name, int age):base(name,age)
+        public Dog(string name, int age) : base(name, age)
         {
-         
+
         }
-              
+
     }
 
     class Cat : Animal
     {
-        public Cat(string name, int age):base(name, age)
+        public Cat(string name, int age) : base(name, age)
         {
 
         }
@@ -70,7 +70,8 @@ namespace ConsoleApp11
 
             Cage<Dog> dogCage = new Cage<Dog>(new Dog("Sevo", 5));
             Cage<Cat> catCage = new Cage<Cat>(new Cat("Miki", 3));
-            
+            Cage<Pig> pigCage = new Cage<Pig>(new Pig("Max", 7));
+
 
         }
     }
